@@ -56830,10 +56830,10 @@ var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["Version"]('7.0.4')
 
 /***/ }),
 
-/***/ "./node_modules/gb-alerts/fesm5/gb-alerts.js":
-/*!***************************************************!*\
-  !*** ./node_modules/gb-alerts/fesm5/gb-alerts.js ***!
-  \***************************************************/
+/***/ "./node_modules/@gavinb841/gb-alerts/fesm5/gavinb841-gb-alerts.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@gavinb841/gb-alerts/fesm5/gavinb841-gb-alerts.js ***!
+  \************************************************************************/
 /*! exports provided: GbAlertsService, GbAlertsComponent, GbAlertsModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56995,13 +56995,13 @@ var GbAlertsModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: gb-alerts.ts
+ * Generated from: gavinb841-gb-alerts.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 
 
-//# sourceMappingURL=gb-alerts.js.map
+//# sourceMappingURL=gavinb841-gb-alerts.js.map
 
 /***/ }),
 

@@ -45,7 +45,7 @@ module.exports = "button {\n  margin: 10px;\n  border: none;\n  color: white;\n 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var gb_alerts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gb-alerts */ "./node_modules/gb-alerts/fesm5/gb-alerts.js");
+/* harmony import */ var _gavinb841_gb_alerts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @gavinb841/gb-alerts */ "./node_modules/@gavinb841/gb-alerts/fesm5/gavinb841-gb-alerts.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -79,7 +79,7 @@ var AppComponent = /** @class */ (function () {
             template: "\n    <h2>Simple Notifications</h2>\n    <div class=\"simple-notifications\">\n      <button class=\"success-angle\" (click)=\"createSuccessAlert()\">Create success alert</button>\n      <button class=\"danger-shadow\" (click)=\"createDangerAlert()\">Create danger alert</button>\n      <button class=\"warning-gradient\" (click)=\"createWarningAlert()\">Create warning alert</button>\n      <button class=\"info-pulse\" (click)=\"createInfoAlert()\">Create info alert</button>\n      <gb-alerts></gb-alerts>\n    </div>\n  ",
             styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
-        __metadata("design:paramtypes", [gb_alerts__WEBPACK_IMPORTED_MODULE_1__["GbAlertsService"]])
+        __metadata("design:paramtypes", [_gavinb841_gb_alerts__WEBPACK_IMPORTED_MODULE_1__["GbAlertsService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -100,8 +100,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var gb_alerts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gb-alerts */ "./node_modules/gb-alerts/fesm5/gb-alerts.js");
+/* harmony import */ var _gavinb841_gb_alerts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @gavinb841/gb-alerts */ "./node_modules/@gavinb841/gb-alerts/fesm5/gavinb841-gb-alerts.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -118,14 +118,14 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                gb_alerts__WEBPACK_IMPORTED_MODULE_3__["GbAlertsModule"]
+                _gavinb841_gb_alerts__WEBPACK_IMPORTED_MODULE_2__["GbAlertsModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
