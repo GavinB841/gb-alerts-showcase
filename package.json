@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:showcase": "ng build gb-alerts-showcase --base-href 'https://gavinb841.github.io/gb-alerts-showcase/'",
+    "build:showcase": "ng build gb-alerts-showcase --base-href https://gavinb841.github.io/gb-alerts-showcase/",
     "publish:showcase": "npx angular-cli-ghpages --dir=./dist/gb-alerts-showcase"
   },
   "private": true,
