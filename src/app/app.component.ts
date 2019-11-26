@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GbAlertsService } from 'gb-alerts';
+import { GbAlertsService } from '@gavinb841/gb-alerts';
 
 
 @Component({

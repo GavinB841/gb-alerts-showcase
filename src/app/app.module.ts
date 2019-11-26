@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { GbAlertsModule } from '@gavinb841/gb-alerts';
 
 import { AppComponent } from './app.component';
-import { GbAlertsModule } from 'gb-alerts';
 
 @NgModule({
   declarations: [

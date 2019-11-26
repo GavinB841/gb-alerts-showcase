@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:showcase": "ng build gb-alerts-showcase --base-href='https://gavinb841.github.io/gb-alerts-showcase/'",
+    "publish:showcase": "npx angular-cli-ghpages --dir=./dist/gb-alerts-showcase"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +24,6 @@
     "@angular/router": "~7.0.0",
     "@gavinb841/gb-alerts": "0.0.1",
     "core-js": "^2.5.4",
-    "gb-alerts": "file:../gb-alert/dist/gb-alerts/gb-alerts-0.0.1.tgz",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
   },
