@@ -56867,7 +56867,7 @@ var GbAlertsService = /** @class */ (function () {
      * @return {?}
      */
     function (message) {
-        this.alertMessage$.next(this.createAlertMessage('Success', message, 'green', 'fas fa-check fa-xs'));
+        this.alertMessage$.next(this.createAlertMessage('Success', message, 'green'));
     };
     /**
      * @param {?} message
@@ -56878,7 +56878,7 @@ var GbAlertsService = /** @class */ (function () {
      * @return {?}
      */
     function (message) {
-        this.alertMessage$.next(this.createAlertMessage('Danger', message, 'red', 'fas fa-times fa-xs'));
+        this.alertMessage$.next(this.createAlertMessage('Danger', message, 'red'));
     };
     /**
      * @param {?} message
@@ -56889,7 +56889,7 @@ var GbAlertsService = /** @class */ (function () {
      * @return {?}
      */
     function (message) {
-        this.alertMessage$.next(this.createAlertMessage('Warning', message, 'darkorange', 'fas fa-exclamation fa-xs'));
+        this.alertMessage$.next(this.createAlertMessage('Warning', message, 'darkorange'));
     };
     /**
      * @param {?} message
@@ -56900,14 +56900,13 @@ var GbAlertsService = /** @class */ (function () {
      * @return {?}
      */
     function (message) {
-        this.alertMessage$.next(this.createAlertMessage('Info', message, 'dodgerblue', 'fas fa-info fa-xs'));
+        this.alertMessage$.next(this.createAlertMessage('Info', message, 'dodgerblue'));
     };
     /**
      * @private
      * @param {?} prefix
      * @param {?} message
      * @param {?} color
-     * @param {?} icon
      * @return {?}
      */
     GbAlertsService.prototype.createAlertMessage = /**
@@ -56915,11 +56914,10 @@ var GbAlertsService = /** @class */ (function () {
      * @param {?} prefix
      * @param {?} message
      * @param {?} color
-     * @param {?} icon
      * @return {?}
      */
-    function (prefix, message, color, icon) {
-        return { prefix: prefix, message: message, color: color, icon: icon };
+    function (prefix, message, color) {
+        return { prefix: prefix, message: message, color: color };
     };
     GbAlertsService.decorators = [
         { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"], args: [{
@@ -56961,7 +56959,7 @@ var GbAlertsComponent = /** @class */ (function () {
     GbAlertsComponent.decorators = [
         { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"], args: [{
                     selector: 'gb-alerts',
-                    template: "\n      <div class=\"alert\"\n              *ngIf=\"alertMessage$ | async as alertMessage\"\n              [ngStyle]=\"{ background: alertMessage.color }\">\n          <span class=\"closebtn\" (click)=\"closeAlert()\"><i class=\"{{ alertMessage.icon }}\"></i></span>\n          <strong>{{ alertMessage.prefix }}!</strong> {{ alertMessage.message }}\n      </div>\n  "
+                    template: "\n      <div\n              class=\"alert\"\n              *ngIf=\"alertMessage$ | async as alertMessage\"\n              [ngStyle]=\"{ background: alertMessage.color }\"\n      >\n          <span class=\"closebtn\" (click)=\"closeAlert()\">&times;</span>\n          <strong>{{ alertMessage.prefix }}!</strong> {{ alertMessage.message }}\n      </div>\n  "
                 }] }
     ];
     /** @nocollapse */
